@@ -37,7 +37,7 @@ print(weight_named)
 
     
 
-weights_sorted = sorted(weight_named, key=weight_named.get, reverse=True)[:1]
+weights_sorted = sorted(weight_named, key=weight_named.get, reverse=True)[:5]
 print(weights_sorted)
 X_scoped = X_scoped[weights_sorted]
 X_train, X_test, y_train, y_test = train_test_split(X_scoped, y, test_size=0.15, shuffle= True)
